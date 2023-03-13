@@ -1,6 +1,10 @@
 import '../App.css'
 import React from 'react'
 
+import {BsActivity} from 'react-icons/bs' 
+import {BsBarChartFill} from 'react-icons/bs' 
+import {BsFillFileEarmarkBarGraphFill} from 'react-icons/bs' 
+
 function Intergrations() {
 
     return (
@@ -15,12 +19,21 @@ function Intergrations() {
                 </p>
                 <div className="Intergrations__Cards">
                     <div className="Intergrations__Card">
+                        <div className="Intergrations__Cards__Icons">
+                        <BsActivity size={30} />
+                        </div>
                         <p>Analyze trends</p>
                     </div>
                     <div className="Intergrations__Card"> 
+                    <div className="Intergrations__Cards__Icons">
+                        <BsBarChartFill size={30} />
+                        </div>
                         <p>Monitor capacity</p>
                     </div>
                     <div className="Intergrations__Card">
+                    <div className="Intergrations__Cards__Icons">
+                        <BsFillFileEarmarkBarGraphFill size={30} />
+                        </div>
                         <p>Generate reports</p>
                     </div>
                 </div>

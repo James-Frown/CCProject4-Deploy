@@ -3,6 +3,8 @@ import React from 'react'
 
 import FeaturesCard from './FeaturesCard'
 
+import {BsFillPeopleFill} from 'react-icons/bs'
+
 function Features() {
 
     return (

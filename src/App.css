@@ -17,6 +17,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: 30px;
+  color: #54BBB7;
 }
 
 .Navigation__Links {
@@ -26,9 +31,6 @@
   gap: 1rem;
 }
 
-.Navigation__Item {
-  
-}
 
 .Navigation__Item__Text {
   font-size: 16px;
@@ -40,12 +42,8 @@
 .Navigation__Item__Text:hover {
   font-size: 16.5px;
   padding: 10px;
-  color: black;
+  color: #54BBB7;
   opacity: 100%;
-}
-
-.Hero {
-
 }
 
 .Hero__Wrapper {
@@ -58,7 +56,7 @@
 
 .Heading {
   font-size: 40px;
-  color: black;
+  color: #54BBB7;
   padding: 1rem 0;
 }
 
@@ -81,14 +79,11 @@
   height: auto;
 }
 
-.Features {
-
-}
-
 .Features__Wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -103,11 +98,12 @@
 }
 
 .featuresCard {
-  background-color: lightblue;
-  opacity: 100%;
+  display: flex;
+  align-items: flex-start;
+  background-color: #54BBB7;
   padding: 20px;
-  width: 300px;
-  height: 50px;
+  width: 250px;
+  height: 100px;
   border-radius: 5px;
 }
 
@@ -116,11 +112,25 @@
 }
 
 .featuresCard__Heading {
+  color: whitesmoke;
   font-size: medium;
-  padding-bottom: 10px;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.featuresCard__Divider {
+  background-color: whitesmoke;
+  opacity: 60%;
+  width: auto;
+  height: 2px;
 }
 
 .featuresCard__Description {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: whitesmoke;
+  opacity: 75%;
   font-size: small;
 }
 
@@ -136,8 +146,8 @@
   justify-content: left;
   align-items: center;
   padding-right: 6rem;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
 }
 
 .Intergrations__Cards {
@@ -145,7 +155,16 @@
 }
 
 .Intergrations__Card {
-  padding: 1rem;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.Intergrations__Cards__Icons {
+  color: #54BBB7;
+  padding-right: 1rem;
 }
 
 .Intergrations__Wrapper__Right {
@@ -156,10 +175,6 @@
   border-radius: 10px;
   width: auto;
   height: 40rem;
-}
-
-.Testemonials {
-
 }
 
 .Testemonials__Wrapper {
@@ -185,7 +200,7 @@
   width: 350px;
   height: auto;
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  box-shadow: rgba(0, 0, 0, 0.241) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 .TestemonialsCard__Box {
@@ -239,3 +254,4 @@
   color: black;
   opacity: 80%;
 }
+
