@@ -1,8 +1,6 @@
 import '../App.css'
 import React from 'react'
 
-import {BsFillPeopleFill} from 'react-icons/bs'
-
 function FeaturesCard(props) {
 
   const Heading = props.Heading;
