@@ -1,0 +1,241 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.Navigation {
+  padding: 2rem;
+}
+
+.Navigation__Wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Navigation__Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navigation__Links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Navigation__Item {
+  
+}
+
+.Navigation__Item__Text {
+  font-size: 16px;
+  padding: 10px;
+  color: black;
+  opacity: 70%;
+}
+
+.Navigation__Item__Text:hover {
+  font-size: 16.5px;
+  padding: 10px;
+  color: black;
+  opacity: 100%;
+}
+
+.Hero {
+
+}
+
+.Hero__Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.Heading {
+  font-size: 40px;
+  color: black;
+  padding: 1rem 0;
+}
+
+.Description {
+  font-size: 18px;
+  color: black;
+  opacity: 70%;
+}
+
+.Hero__Image {
+  display: block;
+  align-items: center;
+  text-align: center; 
+  padding-top: 8rem;
+}
+
+.Hero__Image__Selector {
+  border-radius: 10px;
+  width: 50rem;
+  height: auto;
+}
+
+.Features {
+
+}
+
+.Features__Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.Features__Cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 8rem;
+  gap: 2rem;
+}
+
+.featuresCard {
+  background-color: lightblue;
+  opacity: 100%;
+  padding: 20px;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.featuresCard__Wrapper {
+  align-items: center;
+}
+
+.featuresCard__Heading {
+  font-size: medium;
+  padding-bottom: 10px;
+}
+
+.featuresCard__Description {
+  font-size: small;
+}
+
+.Intergrations {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.Intergrations__Wrapper__Left {
+  justify-content: left;
+  align-items: center;
+  padding-right: 6rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.Intergrations__Cards {
+  padding-top: 4rem;
+}
+
+.Intergrations__Card {
+  padding: 1rem;
+}
+
+.Intergrations__Wrapper__Right {
+  justify-content: right;
+}
+
+.Intergrations__Image__Selector {
+  border-radius: 10px;
+  width: auto;
+  height: 40rem;
+}
+
+.Testemonials {
+
+}
+
+.Testemonials__Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 14rem;
+}
+
+.Testemonials__Cards {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.TestemonialsCard {
+  padding: 1rem;
+  width: 350px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.TestemonialsCard__Box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Box__Top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Box__Top__Left {
+  align-items: flex-start;
+}
+
+.TestemonialsCard__Image__Selector {
+  text-align: center;
+  border-radius: 8px;
+}
+
+.Box__Top__Right {
+  align-items: flex-end;
+  text-align: left;
+}
+
+.Testemonial__Name {
+  font-size: 16px;
+  padding-bottom: 4px;
+  font-weight: bold;
+  color: black;
+  opacity: 70%;
+}
+
+.Testemonial__Bio {
+  font-size: 12px;
+  color: black;
+  opacity: 60%;
+}
+
+.Box__Bottom {
+  text-align: left;
+}
+
+.Testemonial__Comm {
+  font-size: 16px;
+  font-weight: bolder;
+  color: black;
+  opacity: 80%;
+}
