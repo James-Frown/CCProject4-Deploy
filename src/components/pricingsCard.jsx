@@ -10,7 +10,7 @@ function PricingsCard(props) {
   const Date = props.Date;
 
   const Labels = props.Labels;
-  
+
 
   return (
     <div className="Pricings__Card">
