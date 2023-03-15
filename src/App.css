@@ -255,3 +255,22 @@
   opacity: 80%;
 }
 
+.Pricing {
+
+}
+
+.Pricing__Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+}
+
+.Pricing__Cards {
+  display:flex;
+  flex-direction: row;
+  gap: 20%;
+}
