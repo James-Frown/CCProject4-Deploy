@@ -1,6 +1,7 @@
 import './App.css'
 
-import Navigation from './components/Navigation'
+import NewNavigation from './components/NewNavigation'
+{/* import Navigation from './components/Navigation' */}
 import Hero from './components/Hero'
 import Features from './components/Features'
 import Intergrations from './components/Intergrations'
@@ -13,7 +14,9 @@ function App() {
   return (
     <div className="App">
 
-      <Navigation />
+      <NewNavigation />
+
+      {/* <Navigation /> */}
 
       <Hero />
 

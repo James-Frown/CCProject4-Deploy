@@ -1,11 +1,114 @@
 #root {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  opacity: 70%;
+  text-decoration: none;
+}
+
+.Nav__Bar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.Nav__Menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Nav__Brand {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: 30px;
+  color: #54BBB7;
+}
+
+.Nav__Link {
+  transition: 0.7s ease;
+  font-size: 16px;
+  padding: 6px;
+}
+
+.Nav__Link:hover {
+  color: #54BBB7;
+  font-size: 17px;
+}
+
+.Hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.Bar {
+  display: block;
+  width: 25px;
+  height: 6px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #54BBB7;
+}
+
+@media(max-width:800px){
+  .Hamburger {
+    display: block;
+  }
+
+  .Hamburger.active .Bar:nth-child(2) {
+    opacity: 0;
+  }
+  .Hamburger.active .Bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .Hamburger.active .Bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .Nav__Menu {
+    position: fixed;
+    left: -1000%;
+    top: 1rem;
+    gap: 0;
+    flex-direction: column;
+    box-shadow: rgba(33, 109, 39, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .Nav__Item {
+    margin: 16px 0;
+  }
+
+  .Nav__Menu.active {
+    left: 0;
+  }
+}
+
+/*
 .Navigation {
   padding: 2rem;
 }
+
 
 .Navigation__Wrapper {
   display: flex;
@@ -45,6 +148,7 @@
   color: #54BBB7;
   opacity: 100%;
 }
+*/
 
 .Hero__Wrapper {
   display: flex;
@@ -322,10 +426,6 @@
 .Pricings__Plan__Date {
   color: darkgray;
   font-size: 14px;
-}
-
-.Contact {
-
 }
 
 .Contact__Wrapper {
