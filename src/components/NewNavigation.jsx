@@ -29,11 +29,11 @@ function NewNavigation() {
                     </li>
                 </ul>
 
-                <div className="Hamburger">
+                <button type="toggle" className="Hamburger">
                     <span className="Bar"></span>
                     <span className="Bar"></span>
                     <span className="Bar"></span>
-                </div>
+                </button>
             </nav>
         </header>
 

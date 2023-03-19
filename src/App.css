@@ -60,7 +60,7 @@ a {
 
 .Bar {
   display: block;
-  width: 25px;
+  width: 30px;
   height: 6px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -71,16 +71,18 @@ a {
 @media(max-width:800px){
   .Hamburger {
     display: block;
+    background-color: white;
+    border-style: none;
   }
 
-  .Hamburger.active .Bar:nth-child(2) {
+  .Hamburger:active .Bar:nth-child(2) {
     opacity: 0;
   }
-  .Hamburger.active .Bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+  .Hamburger:active .Bar:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
   }
-  .Hamburger.active .Bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+  .Hamburger:active .Bar:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
   }
 
   .Nav__Menu {
@@ -99,7 +101,11 @@ a {
     margin: 16px 0;
   }
 
-  .Nav__Menu.active {
+  .Nav__Menu:active {
+    left: 0;
+  }
+
+  .Hamburger:active .Nav__Menu:active {
     left: 0;
   }
 }
