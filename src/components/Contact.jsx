@@ -11,7 +11,7 @@ function Contact() {
                     Contact Us
                 </h1>
                 <p className="Description">
-                    Get in contact with us and we'll get back to you!
+                    Get in contact with us and we'll get right back to you!
                 </p>
                 <div className="Contact__form__Wrapper">
                     <form action="Submit" className="Contact__form">
