@@ -11,15 +11,23 @@ function Contact() {
                     Contact Us
                 </h1>
                 <p className="Description">
-                    Send us a message and let us know your thourghts!
+                    Get in contact with us and we'll get back to you!
                 </p>
                 <div className="Contact__form__Wrapper">
                     <form action="Submit" className="Contact__form">
-                        <label></label>
-                        <input></input>
-                        <label></label>
-                        <input></input>
-                        <button className="submit__button"></button>
+                        <div className="Form__Item">
+                            <label for="Name">Name</label>
+                            <input type="text" id="Name"></input>
+                        </div>
+                        <div className="Form__Item">
+                            <label for="Email">Email</label>
+                            <input type="email" id="Email" ></input>
+                        </div>
+                        <div className="Form__Item">
+                            <label for="Message">Message</label>
+                            <input type="text" id="Message"></input>
+                        </div>
+                        <button type="submit" className="submit__button">Send</button>
                     </form>
                 </div>
             </div>

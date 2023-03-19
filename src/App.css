@@ -323,3 +323,43 @@
   color: darkgray;
   font-size: 14px;
 }
+
+.Contact {
+
+}
+
+.Contact__Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.Contact__form__Wrapper {
+  padding-top: 3rem;
+}
+
+.Contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 1rem;
+  padding: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Form__Item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.submit__button {
+  margin-top: 1rem;
+}
