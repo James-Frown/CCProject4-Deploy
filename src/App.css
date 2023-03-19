@@ -184,6 +184,8 @@
   text-align: center;
   padding-top: 8rem;
   padding-bottom: 14rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .Testemonials__Cards {
@@ -255,10 +257,6 @@
   opacity: 80%;
 }
 
-.Pricing {
-
-}
-
 .Pricing__Wrapper {
   display: flex;
   flex-direction: column;
@@ -267,10 +265,61 @@
   text-align: center;
   padding-top: 6rem;
   padding-bottom: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .Pricing__Cards {
+  padding-top: 3rem;
   display:flex;
   flex-direction: row;
-  gap: 20%;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.Pricings__Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  height: 100px;
+  padding: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Pricings__Card__Top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.Pricings__Plan__Name {
+  font-size: 20px;
+}
+
+.Pricings__Plan__Bio {
+  color:darkgray;
+  font-size: 16px;
+}
+
+.Pricings__Card__Middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.Pricings__Plan__Price {
+  font-size: 26px;
+}
+
+.Pricings__Plan__Date {
+  color: darkgray;
+  font-size: 14px;
 }
