@@ -53,49 +53,9 @@ a {
   font-size: 17px;
 }
 
-.DropDown {
-  display: none;
-  cursor: pointer;
-  border: 0;
-  border-color: white;
-  background-color: white;
-}
-
-.Hamburger__Open__Icon {
-  display: none;
-  cursor: pointer;
-}
-
-.Hamburger__Close__Icon {
-  display: none;
-  cursor: pointer;
-}
-
-
 
 @media (max-width: 800px) {
-  .DropDown {
-    display: block;
-    color: #54BBB7;
-  }
-
-  .DropDown:hover {
-    display: block;
-    color: #2f4b4a;
-  }
-
-  .DropDown:active {
-    display: block;
-    color: #4f2790;
-  }
-
-  .Hamburger__Open__Icon {
-    display: block;
-  }
-
-  .Nav__Menu {
-    display: none;
-  }
+  
 }
 
 /*
