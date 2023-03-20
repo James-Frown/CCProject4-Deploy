@@ -1,12 +1,12 @@
 import '../App.css'
 import React from 'react'
-import { useState } from 'react'
-
-import {GiHamburgerMenu} from 'react-icons/Gi' 
-import {GrClose} from 'react-icons/Gr' 
 
 
-function NewNavigation(useState) {
+import { GiHamburgerMenu } from 'react-icons/Gi'
+import { GrClose } from 'react-icons/Gr'
+
+
+function NewNavigation() {
 
     return (
 
@@ -38,6 +38,8 @@ function NewNavigation(useState) {
                     <div className="Hamburger__Open__Icon"><GiHamburgerMenu size={30} /></div>
                     <div className="Hamburger__Close__Icon"><GrClose size={30} /></div>
                 </button>
+
+
             </nav>
         </header>
 

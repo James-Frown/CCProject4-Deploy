@@ -79,8 +79,22 @@ a {
     color: #54BBB7;
   }
 
+  .DropDown:hover {
+    display: block;
+    color: #2f4b4a;
+  }
+
+  .DropDown:active {
+    display: block;
+    color: #4f2790;
+  }
+
   .Hamburger__Open__Icon {
     display: block;
+  }
+
+  .Nav__Menu {
+    display: none;
   }
 }
 
