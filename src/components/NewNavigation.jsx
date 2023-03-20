@@ -1,7 +1,12 @@
 import '../App.css'
 import React from 'react'
+import { useState } from 'react'
 
-function NewNavigation() {
+import {GiHamburgerMenu} from 'react-icons/Gi' 
+import {GrClose} from 'react-icons/Gr' 
+
+
+function NewNavigation(useState) {
 
     return (
 
@@ -29,10 +34,9 @@ function NewNavigation() {
                     </li>
                 </ul>
 
-                <button type="toggle" className="Hamburger">
-                    <span className="Bar"></span>
-                    <span className="Bar"></span>
-                    <span className="Bar"></span>
+                <button type="" className="DropDown">
+                    <div className="Hamburger__Open__Icon"><GiHamburgerMenu size={30} /></div>
+                    <div className="Hamburger__Close__Icon"><GrClose size={30} /></div>
                 </button>
             </nav>
         </header>
