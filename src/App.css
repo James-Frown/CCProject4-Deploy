@@ -29,6 +29,7 @@ a {
 
 .Nav__Menu {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
@@ -53,9 +54,43 @@ a {
   font-size: 17px;
 }
 
+.btn {
+  display: none;
+}
 
 @media (max-width: 800px) {
+  .btn {
+    display: block;
+    color: #54BBB7;
+    text-decoration: none;
+    background-color: white;
+    border-color: white;
+    box-shadow: none;
+  }
   
+  
+  .btn.active {
+    display: block;
+    color: #b61313;
+    text-decoration: none;
+    background-color: white;
+    border-color: white;
+    box-shadow: none;
+  }  
+
+  .Nav__Menu {
+    display: none;
+  }
+
+  .Nav__Menu.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+
 }
 
 /*
