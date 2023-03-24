@@ -56,40 +56,16 @@ a {
 
 .btn {
   display: none;
+  color: #54BBB7;
+  fill: #54BBB7;
+  stroke: #54BBB7;
 }
 
 @media (max-width: 800px) {
   .btn {
-    display: block;
+    display: contents;
     color: #54BBB7;
-    text-decoration: none;
-    background-color: white;
-    border-color: white;
-    box-shadow: none;
   }
-  
-  
-  .btn.active {
-    display: block;
-    color: #b61313;
-    text-decoration: none;
-    background-color: white;
-    border-color: white;
-    box-shadow: none;
-  }  
-
-  .Nav__Menu {
-    display: none;
-  }
-
-  .Nav__Menu.active {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-  }
-
 
 }
 

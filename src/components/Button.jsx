@@ -1,33 +1,36 @@
 import '../App.css'
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 import { GiHamburgerMenu } from 'react-icons/Gi'
 import { GrClose } from 'react-icons/Gr'
 
-function Button() {
+const Button = () => {
 
-    const [btnState, setBtnState] = useState(false);
+    const [Icon, setIcon] = useState(<GiHamburgerMenu color="#54BBB7" size={30} />);
+    const [Count, setCount] = useState(1);
 
-    /*
-    const btnActive = () => {
-        <div className="Hamburger__Open__Icon"><GiHamburgerMenu size={30} /></div>
+    const eventHandler = () => {
+        var holder = Count;
+        var test = holder % 2;
+
+        if (test !== 0) {
+            console.log("Open")
+            holder++;
+            setCount(holder);
+            setIcon(<GrClose color="#54BBB7" stroke="#54BBB7" size={30} />);
+        }
+
+        if (test == 0) {
+            console.log("Hidden")
+            holder++;
+            setCount(holder);
+            setIcon(<GiHamburgerMenu color="#54BBB7" stroke="#54BBB7" size={30} />);
+        }
+
     }
-
-    const btnNotActive = () => {
-        <div className="Hamburger__Close__Icon"><GrClose size={30} /></div>
-    }
-*/
-    function btnHandler() {
-
-        setBtnState(btnState => !btnState);
-        console.log(btnState)
-    }
-
-    let toggleClassCheck = btnState ? ' active': '';
 
     return (
-        <button onClick={btnHandler} className={`btn${toggleClassCheck}`}>place holder</button>
+        <button onClick={eventHandler} className="btn">{ Icon }</button>
     )
 
 }
