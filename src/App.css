@@ -67,6 +67,10 @@ a {
     color: #54BBB7;
   }
 
+  .Nav__Menu {
+    display: none;
+  }
+
 }
 
 /*
@@ -153,18 +157,21 @@ a {
 .Hero__Image {
   display: block;
   align-items: center;
+  justify-content: center;
   text-align: center; 
   padding-top: 8rem;
 }
 
 .Hero__Image__Selector {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border-radius: 10px;
   width: 50rem;
   height: auto;
   padding-left: 2rem;
   padding-right: 2rem;
 }
-
 
 .Features__Wrapper {
   display: flex;
@@ -185,8 +192,6 @@ a {
   padding-top: 8rem;
   gap: 2rem;
 }
-
-
 
 .featuresCard {
   display: flex;
@@ -512,7 +517,9 @@ a {
 
 @media (max-width: 930px) {
   .Hero__Image__Selector {
-    width: 20rem;
+    width: 30rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .Features__Cards {
@@ -558,4 +565,22 @@ a {
     padding-right: 1rem;
   }
 
+}
+
+@media (max-width: 500px) {
+  .Hero__Image__Selector {
+    width: 20rem;
+  }
+}
+@media (max-width: 380px) {
+  .Hero__Image__Selector {
+    width: 12rem;
+    height: 10rem;
+    padding: none;
+  }
+  .Intergrations__Image__Selector {
+    width: 12rem;
+    height: 16rem;
+    padding: none;
+  }
 }
