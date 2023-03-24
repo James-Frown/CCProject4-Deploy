@@ -1,35 +1,54 @@
 import '../App.css'
-import React from 'react'
+import React, { useState } from 'react'
 
-function Navigation() {
+import { GiHamburgerMenu } from 'react-icons/Gi'
+import { GrClose } from 'react-icons/Gr'
+
+import MobileNav from './MobileNav';
+import NormalNav from './NormalNav';
+
+const Navigation = () => {
+
+    const [Nav, setNav] = useState(NormalNav);
+    const [Menu, setMenu] = useState(null);
+    const [Icon, setIcon] = useState(<GiHamburgerMenu size={30} />);
+    const [Count, setCount] = useState(1);
+
+    const eventHandler = () => {
+        var holder = Count;
+        var test = holder % 2;
+
+        if (test !== 0) {
+            console.log("Open")
+            holder++;
+            setCount(holder);
+            setIcon(<GrClose size={30} />);
+            setNav(NormalNav);
+            setMenu(MobileNav);
+        }
+
+        if (test == 0) {
+            console.log("Hidden")
+            holder++;
+            setCount(holder);
+            setIcon(<GiHamburgerMenu size={30} />);
+            setNav(NormalNav);
+            setMenu(null);
+        }
+
+    }
 
     return (
-
-        <div id="Navigation" className="Navigation">
-            <div className="Navigation__Wrapper">
-                <div className="Navigation__Logo">
+        <header>
+            <nav className="Nav__Bar">
+                <a href="#Hero" className="Nav__Brand">
                     WorkFlex
-                </div>
-                <div className="Navigation__Links">
-                    <div className="Navigation__Item">
-                        <a href="#Features" id="Fetures__Link" className="Navigation__Item__Text">Features</a>
-                    </div>
-                    <div className="Navigation__Item">
-                        <a href="#Intergrations" id="Intergrations__Link" className="Navigation__Item__Text">Integrations</a>
-                    </div>
-                    <div className="Navigation__Item">
-                        <a href="#Testemonials" id="Testemonials__Link" className="Navigation__Item__Text">Testimonials</a>
-                    </div>
-                    <div className="Navigation__Item">
-                        <a href="#Pricing" id="Pricing__Link" className="Navigation__Item__Text">Pricing</a>
-                    </div>
-                    <div className="Navigation__Item">
-                        <a href="#Contact" id="Contact__Link" className="Navigation__Item__Text">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+                </a>
+                {Nav}
+                <button onClick={eventHandler} className="btn">{ Icon }</button>
+            </nav>
+            {Menu}
+        </header>
     )
 }
 
