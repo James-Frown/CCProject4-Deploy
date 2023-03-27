@@ -1,6 +1,6 @@
 import '../App.css'
 import React from 'react'
-import PricingsCard from './PricingsCard'
+import { PricingsCard } from './PricingsCard'
 
 const Pricing = () => {
 
