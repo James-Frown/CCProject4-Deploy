@@ -1,8 +1,8 @@
 import '../App.css'
 import React, { useState } from 'react'
 
-import { GiHamburgerMenu } from 'react-icons/Gi'
-import { GrClose } from 'react-icons/Gr'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { GrClose } from 'react-icons/gr'
 
 import MobileNav from './MobileNav';
 import NormalNav from './NormalNav';
