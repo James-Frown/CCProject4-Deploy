@@ -1,6 +1,6 @@
 import '../App.css'
 import React from 'react'
-import PricingCard from './PricingsCard'
+import PricingsCard from './PricingsCard'
 
 const Pricing = () => {
 
@@ -16,9 +16,9 @@ const Pricing = () => {
         </p>
         <div className="Pricing__Cards">
 
-          <PricingCard Name="Educational Plan" Bio="For Students and Lectures!" Price="$1.00" Date="Billed Yearly" />
-          <PricingCard Name="Basic Plan" Bio="For Start Up Business's!" Price="$60.00" Date="Billed Monthly" />
-          <PricingCard Name="Enteprize Professional Plan" Bio="The Full package for coporate use!" Price="$250.00" Date="Billed Monthly" />
+          <PricingsCard Name="Educational Plan" Bio="For Students and Lectures!" Price="$1.00" Date="Billed Yearly" />
+          <PricingsCard Name="Basic Plan" Bio="For Start Up Business's!" Price="$60.00" Date="Billed Monthly" />
+          <PricingsCard Name="Enteprize Professional Plan" Bio="The Full package for coporate use!" Price="$250.00" Date="Billed Monthly" />
 
         </div>
       </div>
