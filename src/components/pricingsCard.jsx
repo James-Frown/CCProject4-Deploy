@@ -1,7 +1,7 @@
 import '../App.css'
 import React from 'react';
 
-const PricingsCard = (props) => {
+function PricingsCard(props) {
 
   const Name = props.Name;
   const Bio = props.Bio;
