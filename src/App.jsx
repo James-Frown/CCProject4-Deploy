@@ -1,6 +1,4 @@
 import './App.css'
-import 'react-icons/Gi'
-import 'react-icons/Gr'
 
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
