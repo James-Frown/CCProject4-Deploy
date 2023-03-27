@@ -2,7 +2,7 @@ import '../App.css'
 import React from 'react'
 import PricingsCard from './PricingsCard'
 
-function Pricing() {
+const Pricing = () => {
 
   return (
 
